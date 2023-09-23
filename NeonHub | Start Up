@@ -1,0 +1,54 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Yopapa699/KavoUI/main/KavoUiLib"))()
+local Window = Library.CreateLib("Neon Hub | Startup", "DarkTheme")
+
+local Main = Window:NewTab("Welcome!")
+
+local MainSection = Tab:NewSection("Hello! This is the Startup GUI For Neon Hub")
+local MainSection = Tab:NewSection("-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-")
+local MainSection = Tab:NewSection("Thanks for using Neon Hub!")
+
+local Main = Window:NewTab("Player Info")
+
+local player = game.Players.LocalPlayer
+
+if player then
+    local displayName = player.DisplayName
+    local username = player.Name
+    local userId = player.UserId
+    local joinDate = player.JoinDate
+    local accountAge = os.time() - joinDate
+
+    local textBoxDisplayName = script.Parent:FindFirstChild("TextBoxDisplayName")
+    local textBoxUserId = script.Parent:FindFirstChild("TextBoxUserId")
+    local textBoxAccountAge = script.Parent:FindFirstChild("TextBoxAccountAge")
+
+    if textBoxDisplayName and textBoxUserId and textBoxAccountAge then
+        textBoxDisplayName.Text = "Display Name or Username: " .. displayName
+        textBoxUserId.Text = "User ID: " .. userId
+        textBoxAccountAge.Text = "Account Age (in seconds): " .. accountAge
+    else
+        print("TextBox elements not found.")
+    end
+else
+    print("Player not found.")
+end
+
+local Main = Window:NewTab("NH GUIS")
+local MainSection = Tab:NewSection("Neon Hub GUIS")
+
+MainSection:NewButton("Neon Hub | Bedwars", "Neon Hub, Bedwars edition script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Chxrgxr/scripts/main/Universal%20%7C%20Bedwars.lua",true))()
+end)
+
+MainSection:NewButton("Neon Hub | Da Hood", "Neon Hub, Da Hood edition script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Chxrgxr/scripts/main/Universal%20%7C%20Da%20Hood.lua",true))()
+end)
+
+--Creditz sextion
+
+local Main = Window:NewTab("Creditz")
+local MainSection = Tab:NewSection("Credits")
+local MainSection = Tab:NewSection("-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-")
+local MainSection = Tab:NewSection("Huge thanks to luna_salt for contributing")
+local MainSection = Tab:NewSection("-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-")
+local MainSection = Tab:NewSection("Created by Chxrgxr")
