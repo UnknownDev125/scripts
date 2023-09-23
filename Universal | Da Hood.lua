@@ -13,11 +13,6 @@ MainSection:NewButton("Aim Lock", "Aim Lock for Dh also has a red dot", function
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/reddot1/main/reddot1", true))()
 end)
 
-
-MainSection:NewButton("Inf Yield", "Admin scripts/inf yield", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
-
 MainSection:NewButton("SwagMode", "SwagMode script for da hood", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
 end)
@@ -81,4 +76,16 @@ end)
 
 MainSection:NewButton("Auto-Piano", "best auto piano script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Madness676/3.2Lol/main/AutoPiano3-2.lua", true))()
+end)
+
+--OTHER GUI's
+
+local Main = Window:NewTab("Neon Hub")
+local MainSection = Tab:NewSection("Other GUI's For Neon Hub")
+
+MainSection:NewButton("Neon Hub | Startup GUI", "Beginning Gui for Neon Hub", function()
+end)
+
+MainSection:NewButton("Neon Hub | Bedwars", "Neon Hub, Bedwars edition script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Chxrgxr/scripts/main/Universal%20%7C%20Bedwars.lua",true))()
 end)
