@@ -159,7 +159,7 @@ pageButton.addEventListener('click', () => {
     function searchFiles() {
       const searchInput = document.getElementById('searchInput').value.toLowerCase();
       if (!searchInput) {
-        filesData = filesData.filter(file => file.name.endsWith('.zip') || file.name.endsWith('.rar'));
+        filesData = filesData.filter(file => file.name.endsWith('.lua') || file.name.endsWith('.txt'));
       } else {
         filesData = filesData.filter(file => file.name.toLowerCase().includes(searchInput));
       }
