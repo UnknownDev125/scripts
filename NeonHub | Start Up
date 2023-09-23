@@ -1,13 +1,13 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Yopapa699/KavoUI/main/KavoUiLib"))()
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F" ,true))()
 local Window = Library.CreateLib("Neon Hub | Startup", "DarkTheme")
 
 local Main = Window:NewTab("Welcome!")
-
-local MainSection = Tab:NewSection("Hello! This is the Startup GUI For Neon Hub")
-local MainSection = Tab:NewSection("-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-")
-local MainSection = Tab:NewSection("Thanks for using Neon Hub!")
+local MainSection = Main:NewSection("Hello! This is the Startup GUI For Neon Hub")
+local MainSection = Main:NewSection("-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-")
+local MainSection = Main:NewSection("Thanks for using Neon Hub!")
 
 local Main = Window:NewTab("Player Info")
+local MainSection = Main:NewSection("This has your player info.")
 
 local player = game.Players.LocalPlayer
 
@@ -34,7 +34,7 @@ else
 end
 
 local Main = Window:NewTab("NH GUIS")
-local MainSection = Tab:NewSection("Neon Hub GUIS")
+local MainSection = Main:NewSection("Neon Hub GUIS")
 
 MainSection:NewButton("Neon Hub | Bedwars", "Neon Hub, Bedwars edition script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Chxrgxr/scripts/main/Universal%20%7C%20Bedwars.lua",true))()
@@ -47,8 +47,8 @@ end)
 --Creditz sextion
 
 local Main = Window:NewTab("Creditz")
-local MainSection = Tab:NewSection("Credits")
-local MainSection = Tab:NewSection("-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-")
-local MainSection = Tab:NewSection("Huge thanks to luna_salt for contributing")
-local MainSection = Tab:NewSection("-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-")
-local MainSection = Tab:NewSection("Created by Chxrgxr")
+local MainSection = Main:NewSection("Credits")
+local MainSection = Main:NewSection("-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-")
+local MainSection = Main:NewSection("Huge thanks to luna_salt for contributing")
+local MainSection = Main:NewSection("-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-")
+local MainSection = Main:NewSection("Created by Chxrgxr")
