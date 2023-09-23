@@ -91,3 +91,12 @@ local function kickPlayer()
 end
 kickPlayer()
 end)
+
+--OTHER GUIS 
+
+local Main = Window:NewTab("Neon Hub")
+local MainSection = Tab:NewSection("Other GUI's For Neon Hub")
+
+MainSection:NewButton("Neon Hub | Da Hood", "Neon Hub, Da Hood edition script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Chxrgxr/scripts/main/Universal%20%7C%20Da%20Hood.lua",true))()
+end)
