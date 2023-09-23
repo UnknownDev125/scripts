@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Scripts</title>
-  <div class="topnav">
-  <a class="active" href="https://chxrgxr.github.io">Home</a>
-  <a href="https://chxrgxr.github.io/scripts">Scripts</a>
-  <a href="https://chxrgxr.github.io">config</a>
-  <a href="https://youtube.com/@chxrgxr">Youtube</a>
-</div>
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    body {
+ {
  background-image: url("https://i.gifer.com/3Px6.gif");
  background-color: #cccccc;
 } 
