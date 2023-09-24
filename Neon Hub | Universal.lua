@@ -1,3 +1,7 @@
+local other = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local other = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+
+
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "Welcome!",
     Text = "Welcome to Neon Hub!"
