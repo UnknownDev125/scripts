@@ -135,6 +135,23 @@ if game.PlaceId == 6284583030 then
 
     local Main = Window:NewTab("Game")
     local MainSection = Main:NewSection("Pet Sim X")
+
+O:NewButton("Player : " .. game.Players.LocalPlayer.Name .. " | " .. game.Players.LocalPlayer.UserId, "?", function()
+    print("hi")
+end)
+
+O:NewButton("Game : " .. game.PlaceId .. " | " .. X.Name, "?", function()
+    print("hi")
+end)
+
+O:NewButton("Account Age : " .. game.Players
+.LocalPlayer.AccountAge, "?", function()
+    print("hi")
+end)
+
+O:NewButton("FPS : " .. j.ViewportFramesPerSecond, "?", function()
+    print("hi")
+end)
     
 MainSection:NewButton("Milk Up By RafaHub", "Milk up autofarm script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafacasari/roblox-scripts/main/psx.lua"))()
@@ -157,6 +174,23 @@ elseif game.PlaceId == 2788229376 then
 
     local Main = Window:NewTab("Game")
     local MainSection = Main:NewSection("Da Hood")
+
+O:NewButton("Player : " .. game.Players.LocalPlayer.Name .. " | " .. game.Players.LocalPlayer.UserId, "?", function()
+    print("hi")
+end)
+
+O:NewButton("Game : " .. game.PlaceId .. " | " .. X.Name, "?", function()
+    print("hi")
+end)
+
+O:NewButton("Account Age : " .. game.Players
+.LocalPlayer.AccountAge, "?", function()
+    print("hi")
+end)
+
+O:NewButton("FPS : " .. j.ViewportFramesPerSecond, "?", function()
+    print("hi")
+end)
 
 MainSection:NewButton("Instant Cash", "May have to server hop to get more", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/laagginq/storage/main/DHcodefarm.lua"))()
@@ -347,6 +381,23 @@ elseif game.PlaceId == 6872265039 then
     
     local Main = Window:NewTab("Game")
     local MainSection = Main:NewSection("Bedwars")
+
+    O:NewButton("Player : " .. game.Players.LocalPlayer.Name .. " | " .. game.Players.LocalPlayer.UserId, "?", function()
+    print("hi")
+end)
+
+O:NewButton("Game : " .. game.PlaceId .. " | " .. X.Name, "?", function()
+    print("hi")
+end)
+
+O:NewButton("Account Age : " .. game.Players
+.LocalPlayer.AccountAge, "?", function()
+    print("hi")
+end)
+
+O:NewButton("FPS : " .. j.ViewportFramesPerSecond, "?", function()
+    print("hi")
+end)
     
 MainSection:NewButton("Vape V4 original", "Vape V4 original", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
