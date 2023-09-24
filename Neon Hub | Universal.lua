@@ -426,17 +426,7 @@ local Party =
  task.wait(0.3)
 	useAbility("PARTY_POPPER")
 end)
-   
-MainSection:NewButton("Ac Disabler", "Ac disabler real 100%", function()
-local playerToKick = game.Players.LocalPlayer
-local function kickPlayer()
-    if playerToKick and playerToKick:IsInGame() then
-        playerToKick:Kick("You have been temporarily banned. [Remaining ban duration: 4960 weeks 2 days 5 hours 19 minutes "..math.random(45, 59).." seconds ]")
-    else
-       print("Player not found or not in the game.")
-    end
-end)
-    
+	
 MainSection:NewButton("Cape", "cape might edit soon", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/vPH3fgUj", true))()
 end)
