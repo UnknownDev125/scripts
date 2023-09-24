@@ -1,7 +1,3 @@
-local other = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
-local other = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
-
-
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "Welcome!",
     Text = "Welcome to Neon Hub!"
@@ -13,61 +9,11 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 })
 wait(5)
 
-local c = loadstring(game:HttpGet("https://pastebin.com/raw/RmLqTugH"))()
-local d = c.CreateLib("NEON HUB | Universal", "Serpent")
-
---gui toggle to show and unshow
-
-local f = Instance.new("ScreenGui")
-local g = Instance.new("TextButton")
-
-f.Name = "Toggle"
-f.Parent = game.CoreGui
-g.Name = "UIToggle"
-g.Parent = f
-g.BackgroundColor3 = Color3.fromRGB(24,24,24)
-g.BackgroundTransparency = 0.660
-g.Position = UDim2.new(0,0,0.454706937,0)
-g.Size = UDim2.new(0.0650164187,0,0.0888099447,0)
-g.Font = Enum.Font.SourceSans
-g.Text = "Toggle"
-g.TextColor3 = Color3.fromRGB(75,0,130)
-g.TextSize = 24.000
-g.TextXAlignment = Enum.TextXAlignment.Left
-
-g.MouseButton1Click:connect(function()
-    c:ToggleUI()
-end)
-
--- this ends here
-
-local welcome = Window:NewTab("Welcome")
-local O = Main:NewSection("Display your info")
-
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F" ,true))()
+local Window = Library.CreateLib("Neon Hub | Universal", "DarkTheme")
 
 local Main = Window:NewTab("Universal")
 local MainSection = Main:NewSection("Universal Script here:")
-
--- account info
-
-O:NewButton("Player : " .. game.Players.LocalPlayer.Name .. " | " .. game.Players.LocalPlayer.UserId, "?", function()
-    print("hi")
-end)
-
-O:NewButton("Game : " .. game.PlaceId .. " | " .. X.Name, "?", function()
-    print("hi")
-end)
-
-O:NewButton("Account Age : " .. game.Players
-.LocalPlayer.AccountAge, "?", function()
-    print("hi")
-end)
-
-O:NewButton("FPS : " .. j.ViewportFramesPerSecond, "?", function()
-    print("hi")
-end)
-
---other scripts
 
 MainSection:NewButton("Fly", "works in some games", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/VddKrfF4"))();
@@ -132,30 +78,8 @@ end)
 --GAME IDS
 
 if game.PlaceId == 6284583030 then
-    
-    local welcome = Window:NewTab("Welcome")
-    local O = Main:NewSection("Display your info")
-
-
     local Main = Window:NewTab("Game")
     local MainSection = Main:NewSection("Pet Sim X")
-
-O:NewButton("Player : " .. game.Players.LocalPlayer.Name .. " | " .. game.Players.LocalPlayer.UserId, "?", function()
-    print("hi")
-end)
-
-O:NewButton("Game : " .. game.PlaceId .. " | " .. X.Name, "?", function()
-    print("hi")
-end)
-
-O:NewButton("Account Age : " .. game.Players
-.LocalPlayer.AccountAge, "?", function()
-    print("hi")
-end)
-
-O:NewButton("FPS : " .. j.ViewportFramesPerSecond, "?", function()
-    print("hi")
-end)
     
 MainSection:NewButton("Milk Up By RafaHub", "Milk up autofarm script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafacasari/roblox-scripts/main/psx.lua"))()
@@ -171,30 +95,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ReturnString9999/P-S-
 end)
     
 elseif game.PlaceId == 2788229376 then
-    
-    local welcome = Window:NewTab("Welcome")
-    local O = Main:NewSection("Display your info")
-    
-
     local Main = Window:NewTab("Game")
     local MainSection = Main:NewSection("Da Hood")
-
-O:NewButton("Player : " .. game.Players.LocalPlayer.Name .. " | " .. game.Players.LocalPlayer.UserId, "?", function()
-    print("hi")
-end)
-
-O:NewButton("Game : " .. game.PlaceId .. " | " .. X.Name, "?", function()
-    print("hi")
-end)
-
-O:NewButton("Account Age : " .. game.Players
-.LocalPlayer.AccountAge, "?", function()
-    print("hi")
-end)
-
-O:NewButton("FPS : " .. j.ViewportFramesPerSecond, "?", function()
-    print("hi")
-end)
 
 MainSection:NewButton("Instant Cash", "May have to server hop to get more", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/laagginq/storage/main/DHcodefarm.lua"))()
@@ -379,29 +281,8 @@ end)
 end)
             
 elseif game.PlaceId == 6872265039 then
-    
-    local welcome = Window:NewTab("Welcome")
-    local O = Main:NewSection("Display your info")
-    
     local Main = Window:NewTab("Game")
     local MainSection = Main:NewSection("Bedwars")
-
-    O:NewButton("Player : " .. game.Players.LocalPlayer.Name .. " | " .. game.Players.LocalPlayer.UserId, "?", function()
-    print("hi")
-end)
-
-O:NewButton("Game : " .. game.PlaceId .. " | " .. X.Name, "?", function()
-    print("hi")
-end)
-
-O:NewButton("Account Age : " .. game.Players
-.LocalPlayer.AccountAge, "?", function()
-    print("hi")
-end)
-
-O:NewButton("FPS : " .. j.ViewportFramesPerSecond, "?", function()
-    print("hi")
-end)
     
 MainSection:NewButton("Vape V4 original", "Vape V4 original", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
@@ -417,17 +298,20 @@ end)
 
 MainSection:NewButton("Dragon Breath", "Dragon breath real!", function()
 local Dragon Breath =  
+Dragon Breath = 
 task.wait(0.3)
 bedwars.ClientHandler:Get("DragonBreath"):SendToServer({player = lplr})
 end)
     
 MainSection:NewButton("Party Popper", "Party Popper spammer", function()
 local Party = 
- task.wait(0.3)
+Party =
+task.wait(0.3)
 	useAbility("PARTY_POPPER")
 end)
-	
-MainSection:NewButton("Cape", "cape might edit soon", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/vPH3fgUj", true))()
-end)
     end
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Neon Hub",
+    Text = "Neon Hub is now fully executed."
+})
