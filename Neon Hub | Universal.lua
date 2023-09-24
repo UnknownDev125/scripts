@@ -9,8 +9,33 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 })
 wait(5)
 
-local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F" ,true))()
-local Window = Library.CreateLib("Neon Hub | Universal", "DarkTheme")
+local c = loadstring(game:HttpGet("https://pastebin.com/raw/RmLqTugH"))()
+local d = c.CreateLib("NEON HUB | Universal", "Serpent")
+
+--gui toggle to show and unshow
+
+local f = Instance.new("ScreenGui")
+local g = Instance.new("TextButton")
+
+f.Name = "Toggle"
+f.Parent = game.CoreGui
+g.Name = "UIToggle"
+g.Parent = f
+g.BackgroundColor3 = Color3.fromRGB(24,24,24)
+g.BackgroundTransparency = 0.660
+g.Position = UDim2.new(0,0,0.454706937,0)
+g.Size = UDim2.new(0.0650164187,0,0.0888099447,0)
+g.Font = Enum.Font.SourceSans
+g.Text = "Toggle"
+g.TextColor3 = Color3.fromRGB(75,0,130)
+g.TextSize = 24.000
+g.TextXAlignment = Enum.TextXAlignment.Left
+
+g.MouseButton1Click:connect(function()
+    c:ToggleUI()
+end)
+
+-- this ends here
 
 local welcome = Window:NewTab("Welcome")
 local O = Main:NewSection("Display your info")
