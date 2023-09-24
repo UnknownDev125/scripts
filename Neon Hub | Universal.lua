@@ -165,7 +165,7 @@ getgenv().Prediction =  (  .18  )
  
 getgenv().FOV =  (  200 )
  
-getgenv().AimKey =  (  "c"  )
+getgenv().keytoclick = "c"
  
 getgenv().DontShootThesePeople = {
  
@@ -314,10 +314,8 @@ local function kickPlayer()
     if playerToKick and playerToKick:IsInGame() then
         playerToKick:Kick("You have been temporarily banned. [Remaining ban duration: 4960 weeks 2 days 5 hours 19 minutes "..math.random(45, 59).." seconds ]")
     else
-       print("no work :sob:")
+       print("Player not found or not in the game.")
     end
-end
-kickPlayer()
 end)
     
 MainSection:NewButton("Cape", "cape might edit soon", function()
