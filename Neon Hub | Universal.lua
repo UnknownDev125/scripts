@@ -128,6 +128,11 @@ end)
 --GAME IDS
 
 if game.PlaceId == 6284583030 then
+    
+    local welcome = Window:NewTab("Welcome")
+    local O = Main:NewSection("Display your info")
+
+
     local Main = Window:NewTab("Game")
     local MainSection = Main:NewSection("Pet Sim X")
     
@@ -145,6 +150,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ReturnString9999/P-S-
 end)
     
 elseif game.PlaceId == 2788229376 then
+    
+    local welcome = Window:NewTab("Welcome")
+    local O = Main:NewSection("Display your info")
+    
+
     local Main = Window:NewTab("Game")
     local MainSection = Main:NewSection("Da Hood")
 
@@ -331,6 +341,10 @@ end)
 end)
             
 elseif game.PlaceId == 6872265039 then
+    
+    local welcome = Window:NewTab("Welcome")
+    local O = Main:NewSection("Display your info")
+    
     local Main = Window:NewTab("Game")
     local MainSection = Main:NewSection("Bedwars")
     
