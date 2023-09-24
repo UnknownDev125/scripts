@@ -12,8 +12,33 @@ wait(5)
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F" ,true))()
 local Window = Library.CreateLib("Neon Hub | Universal", "DarkTheme")
 
+local welcome = Window:NewTab("Welcome")
+local O = Main:NewSection("Display your info")
+
+
 local Main = Window:NewTab("Universal")
 local MainSection = Main:NewSection("Universal Script here:")
+
+-- account info
+
+O:NewButton("Player : " .. game.Players.LocalPlayer.Name .. " | " .. game.Players.LocalPlayer.UserId, "?", function()
+    print("hi")
+end)
+
+O:NewButton("Game : " .. game.PlaceId .. " | " .. X.Name, "?", function()
+    print("hi")
+end)
+
+O:NewButton("Account Age : " .. game.Players
+.LocalPlayer.AccountAge, "?", function()
+    print("hi")
+end)
+
+O:NewButton("FPS : " .. j.ViewportFramesPerSecond, "?", function()
+    print("hi")
+end)
+
+--other scripts
 
 MainSection:NewButton("Fly", "works in some games", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/VddKrfF4"))();
