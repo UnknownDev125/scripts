@@ -23,7 +23,7 @@ local players = game:GetService("Players")
 if players then
     game:GetService("StarterGui"):SetCore("SendNotification",{
         Title = "Notification",
-        Text = "Player Found!",name,
+        Text = "Player Found! ",name,
     })
     local localplayer = players.LocalPlayer
     local name = localplayer.Name
