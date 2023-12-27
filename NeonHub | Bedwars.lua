@@ -21,6 +21,10 @@ local Utilities = Utility:NewSection("Animation hub/etc")
 local players = game:GetService("Players")
 
 if players then
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = "Notification",
+        Text = "Player Found!",name,
+    })
     local localplayer = players.LocalPlayer
     local name = localplayer.Name
     local userid = localplayer.UserId
@@ -28,6 +32,10 @@ if players then
 end
     else
         print("Player Not Found!")
+        game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "Notification",
+            Text = "Player Not Found!",
+        })
 
 --Information
 Information:NewButton("Player Name: ",name, "Shows The Players Name", function()
