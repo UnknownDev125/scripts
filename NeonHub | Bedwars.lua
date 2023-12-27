@@ -19,17 +19,22 @@ local Utilities = Utility:NewSection("Animation hub/etc")
 
 --Variables
 local players = game:GetService("Players")
-local localplayer = players.LocalPlayer
-local name = LocalPLayer.Name
-local userid = LocalPLayer.UserId
-local accountage = LocalPLayer.AccountAge
+
+if players then
+    local localplayer = players.LocalPlayer
+    local name = localplayer.Name
+    local userid = localplayer.UserId
+    local accountage = localplayer.AccountAge
+end
+    else
+        print("Player Not Found!")
 
 --Information
-Information:NewButton("Player Name: ",Name, "Shows The Players Name", function()
+Information:NewButton("Player Name: ",name, "Shows The Players Name", function()
 end)    
 
 Information:NewButton("Player Id:",userid, "Shows The Players Id", function()
 end)
 
-Information:NewButton("Player Age",accountage, "Shows THe Players Account Age", function()
-end)  
+Information:NewButton("Player Age",accountage, "Shows The Players Account Age", function()
+end)
