@@ -1,34 +1,35 @@
--- ths project is lead by Luna_salt and Unknown | 🎭#1693
+-- ths project is lead mostly by Unknown | 🎭#1693 and Luna_salt 
 
 -- Library
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/RmLqTugH"))()
-
--- Window
 local Window = Library.CreateLib("NEON HUB | BEDWARS", "Serpent")
 
 --tabs
-local Welcome = Window:NewTab("Player info")
-local info = Credits:NewSection("Player ip/roblox password :troll:")
+local Main = Window:NewTab("Main")
+local Mains = Main:NewSection("KillAura/Combat Stuffs")
+
+local Information = Window:NewTab("Player info")
+local info = Information:NewSection("Player name/roblox info")
 
 local Credit = Window:NewTab("Credits")
-local Credits = Credits:NewSection("important")
+local Credits = Credit:NewSection("important")
 
-local  Main = Window:NewTab("Main")
-local Mains = Mains:NewSection("killaura/Velocity/etc")
+local Utility = Window:NewTab("Utility")
+local Utilities = Utility:NewSection("Animation hub/etc")
 
-local Utilitie = Window:NewTab("Utility")
-local Utilities = Credits:NewSection("Animation hub/etc")
+--Variables
+local players = game:GetService("Players")
+local localplayer = players.LocalPlayer
+local name = LocalPLayer.Name
+local userid = LocalPLayer.UserId
+local accountage = LocalPLayer.AccountAge
 
---welcome
---it ends here
+--Information
+Information:NewButton("Player Name: ",Name, "Shows The Players Name", function()
+end)    
 
---main
-
-Section:NewToggle("ToggleText", "ToggleInfo", function(state)
-    if state then
-        print("Toggle On")
-    else
-        print("Toggle Off")
-    end
+Information:NewButton("Player Id:",userid, "Shows The Players Id", function()
 end)
 
+Information:NewButton("Player Age",accountage, "Shows THe Players Account Age", function()
+end)  
